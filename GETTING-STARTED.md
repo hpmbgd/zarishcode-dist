@@ -30,9 +30,10 @@ Every command is copy-paste ready — run **one at a time**, top to bottom.
 
 If a check command prints a version number, you are good.
 
-> **OpenCode itself is installed for you.** The installer detects when OpenCode
-> isn't on your machine and installs it automatically (official OpenCode
-> installer, into `~/.opencode/bin`). You don't need to install it beforehand.
+> **OpenCode V2 is installed for you.** zarishcode is built on OpenCode **V2**.
+> The installer detects when OpenCode isn't on your machine and installs V2
+> automatically (official OpenCode V2 installer, into `~/.opencode/bin`). You
+> don't need to install it beforehand.
 
 ---
 
@@ -45,9 +46,9 @@ curl -fsSL https://raw.githubusercontent.com/hpmbgd/zarishcode-dist/main/install
 ```
 
 This downloads the pack, puts the commands in `~/.local/bin`, and runs first-run
-setup. If OpenCode isn't installed yet, setup installs it for you automatically.
-It only fetches the pack from the public distribution repo — never the private
-source.
+setup. If OpenCode V2 isn't installed yet, setup installs it for you
+automatically. It only fetches the pack from the public distribution repo —
+never the private source.
 
 ### Option B — npm (if you already use Node.js)
 
@@ -56,7 +57,7 @@ npm install -g zarishcode && zarishcode-setup
 ```
 
 Both options end by running the same setup, so you only do **one** of them. Setup
-also installs OpenCode automatically when it's missing.
+also installs OpenCode V2 automatically when it's missing.
 
 ---
 
@@ -148,7 +149,7 @@ Tip: type `/zarish-setup` instead and it will walk you through all three, one at
 | Symptom | Fix |
 |---|---|
 | `zarishcode: command not found` | Add `~/.local/bin` to PATH (see §3). |
-| `opencode: command not found` (when running `zarishcode`) | OpenCode wasn't installed or the terminal is old — close and reopen the terminal, or re-run the installer (it installs OpenCode when missing). |
+| `opencode: command not found` (when running `zarishcode`) | OpenCode V2 wasn't installed or the terminal is old — close and reopen the terminal, or re-run the installer (it installs OpenCode V2 when missing). |
 | `npm: command not found` | Install Node.js LTS from <https://nodejs.org>, reopen the terminal. |
 | Installer prints `curl: command not found` | Install curl, or use the npm path (§2, Option B). |
 | Theme didn't change | Confirm `~/.config/opencode/cli.json` has `"theme": { "name": "zarishcode" }`, then restart. |

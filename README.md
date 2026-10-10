@@ -13,7 +13,7 @@ or, with Node.js:
 npm install -g zarishcode && zarishcode-setup
 ```
 
-If OpenCode isn't installed yet, the installer installs it for you automatically.
+If OpenCode V2 isn't installed yet, the installer installs it for you automatically.
 
 Full step-by-step guide (no coding needed): [GETTING-STARTED.md](./GETTING-STARTED.md).
 
